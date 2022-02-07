@@ -12,6 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
       ease:"power6.out"
 
  })
+ 
+ .from (".about", {
+    duration:1,
+    y:50,
+    opacity:0,
+    delay:0.5,
+    ease:"power6.out"
+})
 
 
  .from (".list-item", {

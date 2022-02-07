@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html { 
+    scroll-behavior: smooth;
+}
+
 
 body { 
  width: 100%;
@@ -149,8 +153,9 @@ a {
    
 }
 
-.about h3 { 
- margin-top: 20px;
+.about h4 { 
+ margin-top: 40px;
+ margin-bottom: 60px;
 
 }
 
@@ -166,6 +171,7 @@ a {
     justify-content: start;
     align-items: center;
     padding:24px;
+    margin-top:20px
     
 }
 
