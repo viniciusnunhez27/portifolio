@@ -1,4 +1,6 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');*
+
+*{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -11,8 +13,23 @@
     border-radius: 50%;
 }
 
+.developer {
+  font-size: 27px;
+}
 
 .btn-group  { 
   display: flex;
   gap:10px;
+}
+
+.fa-github { 
+  padding:5px;
+
+
+}
+
+.card-text { 
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+
 }
