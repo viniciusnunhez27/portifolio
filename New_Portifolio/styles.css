@@ -13,10 +13,6 @@
     border-radius: 50%;
 }
 
-.developer {
-  font-size: 27px;
-}
-
 .btn-group  { 
   display: flex;
   gap:10px;
