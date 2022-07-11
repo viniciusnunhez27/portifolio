@@ -5,8 +5,8 @@
  padding: 0;
  box-sizing: border-box;
  font-family: 'Inter', sans-serif;
-color: #FFFF;
-background-color: #151515;
+ color: #FFFF;
+ background-color: #151515;
 }
 
 
@@ -20,8 +20,9 @@ header span {
 }
 
 .menu ul { 
-   display: flex;
+   display:flex;
    justify-content: flex-end;
+   justify-items: end;
    gap: 66px;
 }
 
@@ -65,15 +66,47 @@ line-height: 29px;
 .btn  { 
   padding: 8px 30px 8px 30px;
   border-radius: 5px;
-  border: 1px solid #00D2DF; 
+  border: 1px solid #00D2DF;
+  gap:20px;
 }
 
 .btn img {
    margin-right: 10px;
 }
 
+.container-about { 
+    margin-top:100px;
+}
 
 
- 
+.container-about { 
+    margin-left: 180px; 
+    display: flex;
+    justify-content: flex-start;
+    gap:700px;
+}
+
+.about h4 { 
+   margin-bottom: 20px;
+   font-size: 24px;
+   line-height: 29px;
+}
+
+.about p { 
+margin-bottom: 20px;
+}
+
+.city { 
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.2px;
+}
+
+.about-profile { 
+ font-weight: 300;
+ size:18px;
+ line-height: 28px;
+}
+
 
 
