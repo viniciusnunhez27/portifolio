@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
 
 * { 
  margin: 0;
@@ -21,9 +21,9 @@ header span {
 
 .menu ul { 
    display:flex;
-   justify-content: flex-end;
-   justify-items: end;
-   gap: 66px;
+   justify-content:flex-end;
+   justify-items:flex-end;
+   gap: 140px;
 }
 
 .menu ul li {
@@ -74,16 +74,22 @@ line-height: 29px;
    margin-right: 10px;
 }
 
-.container-about { 
+.container-about {
     margin-top:100px;
 }
 
 
-.container-about { 
+.container-about  { 
     margin-left: 180px; 
     display: flex;
     justify-content: flex-start;
-    gap:700px;
+    gap:500px;
+}
+
+.about-img img { 
+   width: 300px;
+   height: 300px; 
+   
 }
 
 .about h4 { 
@@ -103,9 +109,18 @@ margin-bottom: 20px;
 }
 
 .about-profile { 
- font-weight: 300;
+ font-weight:300;
  size:18px;
  line-height: 28px;
+}
+
+.carrer  { 
+  padding: 100px 0px 0px 180px ;
+}
+
+.carrer { 
+  display: flex;
+
 }
 
 
