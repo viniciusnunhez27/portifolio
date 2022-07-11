@@ -89,6 +89,8 @@ line-height: 29px;
 .about-img img { 
    width: 300px;
    height: 300px; 
+   border-left:solid 4px #00D2DF;
+
    
 }
 
@@ -114,14 +116,92 @@ margin-bottom: 20px;
  line-height: 28px;
 }
 
-.carrer  { 
-  padding: 100px 0px 0px 180px ;
+
+
+/* EXPERIENCIA */
+
+#experiencia { 
+   padding: 100px 0px 40px 180px ;
+   display: flex;
+   align-items: center;
 }
 
-.carrer { 
+.content-carrer { 
+   display: flex;
+   gap: 100px;
+   align-items: center;
+   
+}
+
+.left-carrer h2 { 
+  margin-left: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 44px;
+}
+
+.left-carrer ul {
+   display: flex;
+   flex-direction: column;
+   list-style-type: none;
+ 
+}
+
+.left-carrer li { 
+   font-size: 20px;
+   font-weight: 500;
+   cursor: pointer; 
+   display: flex;
+   padding: 1rem 2rem ;
+  
+
+}
+
+.right-carrer { 
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+
+}
+
+.right-carrer .title-carrer { 
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 28px;
 
 }
+
+.right-carrer .title-carrer h2 { 
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.right-carrer .title-carrer  span { 
+   font-size: 18px;
+   font-weight: 500;
+}
+
+.right-carrer .tag{
+   font-size: 18px;
+   font-weight: 500;
+   margin-bottom: 26px;
+   color: #00D2DF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
