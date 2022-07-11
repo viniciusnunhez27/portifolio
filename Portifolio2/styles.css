@@ -121,7 +121,7 @@ margin-bottom: 20px;
 /* EXPERIENCIA */
 
 #experiencia { 
-   padding: 100px 0px 40px 180px ;
+   padding: 150px 0px 40px 180px ;
    display: flex;
    align-items: center;
 }
@@ -152,9 +152,20 @@ margin-bottom: 20px;
    font-weight: 500;
    cursor: pointer; 
    display: flex;
-   padding: 1rem 2rem ;
-  
+   padding: 16px  32px;
+   
+}
 
+.left-carrer li:nth-child(0) { 
+   border-left: 2px solid #00D2DF;
+   background-color: #212121;
+}
+
+
+.left-carrer li:hover { 
+  border-left: 2px solid #00d2df;
+  background-color: #212121;
+    
 }
 
 .right-carrer { 
@@ -185,6 +196,7 @@ margin-bottom: 20px;
 .right-carrer .tag{
    font-size: 18px;
    font-weight: 500;
+   line-height: 28px;
    margin-bottom: 26px;
    color: #00D2DF;
 }
