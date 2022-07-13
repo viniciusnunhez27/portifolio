@@ -67,7 +67,8 @@ line-height: 29px;
   padding: 8px 30px 8px 30px;
   border-radius: 5px;
   border: 1px solid #00D2DF;
-  gap:20px;
+  margin-top: 10px;
+  
 }
 
 .btn img {
@@ -221,20 +222,41 @@ margin-bottom: 20px;
 
 .card-content  { 
    width: 100%;
+   
+}
+
+.card-content img { 
+   width: 100%;
    max-width: 530px;
+   max-height: 200px;
+   margin-bottom: 20px;
    border: 1px solid #00D2DF;
 }
 
-
-.card-content img { 
-   margin-bottom: 20px;
-}
-
 .card-content h3 { 
-   margin-bottom: 10px;
-
+   font-weight: 500;
 }
 
+.card-content p { 
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  color: #c4c4c4;
+}
+
+
+footer { 
+   padding: 120px 0px 40px 180px;
+   display: flex;
+   justify-content: space-between;
+   max-width: 90%;
+}
+
+.footer-details span { 
+  color: #00D2DF;
+    
+}
 
 
 
