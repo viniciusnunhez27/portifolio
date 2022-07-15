@@ -9,6 +9,17 @@
  background-color: #151515;
 }
 
+.container-header { 
+   display: flex;
+   justify-content: space-between;
+}
+
+.container-header a { 
+text-decoration: none;
+color: #00D2DF;
+
+}
+
 
 
 header { 
