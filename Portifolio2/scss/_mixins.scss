@@ -12,9 +12,11 @@
 
 }
 
-@mixin sytle-btns ($height, $bg , $colorText) { 
+@mixin sytle-btns ($height, $width, $bg,$border,$colorText) { 
     display:inline-block;
     height: $height;
+    width: $width;
+    border: 1px solid $primary-color;
     background-color: $bg;
     border-radius: 6px;
     padding: 0  48px;
@@ -22,6 +24,7 @@
     font-size: 16px;
     transition: all .3ms;
     color: $colorText;
+    cursor: pointer;
     }
 
   

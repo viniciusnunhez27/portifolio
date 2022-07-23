@@ -22,18 +22,14 @@
             color: $primary-color;
         } 
          button {
-            margin-top:60px;
-            margin-left:24px;
-            &:not(:first-child){
-              margin-left:24px;
-            }
-            @include sytle-btns (45px,$gray-light-color,$light-color)  
+           margin-top:64px;
+           margin-left:24px;
+           &:not(:first-child){
+            margin-left: 24px;
+          @include sytle-btns (45px,153px,$dark-color,$primary-color,$light-color)  
         }     
-        }
-     }
+      }
+    }
+  }
 
-
-   }
-
-
-
+}

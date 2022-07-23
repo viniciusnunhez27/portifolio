@@ -1,4 +1,5 @@
  header {
+  margin-top:42px;
   background-color: $dark-color;
     .container { 
        @include flex(row,center,space-between) 
@@ -33,7 +34,7 @@
         padding: 15px;
       }  
       .text{
-       margin: 0 auto;
+        margin: 0 auto;
       }
      } 
      nav{
@@ -41,5 +42,4 @@
     } 
   }
 
-  @include responsive (480px){
-}
+ }
