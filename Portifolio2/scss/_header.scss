@@ -26,4 +26,20 @@
         color: $light-color;
       }  
   } 
+
+  @include responsive (600px){
+     header {
+      .container{
+        padding: 15px;
+      }  
+      .text{
+       margin: 0 auto;
+      }
+     } 
+     nav{
+      display: none;
+    } 
+  }
+
+  @include responsive (480px){
 }
