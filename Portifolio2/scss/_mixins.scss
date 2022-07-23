@@ -1,0 +1,27 @@
+@mixin responsive ($ScreenWidth) {
+    @media (max-width: $ScreenWidth){
+      @content;
+    }
+  }
+
+  @mixin flex ($direction, $align, $justify) {
+    display: flex;
+    flex-direction: $direction;
+     align-items: $align;
+     justify-content: $justify;
+
+}
+
+@mixin sytle-btns ($height, $bg , $colorText) { 
+    display:inline-block;
+    height: $height;
+    background-color: $bg;
+    border-radius: 6px;
+    padding: 0  48px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all .3ms;
+    color: $colorText;
+    }
+
+  

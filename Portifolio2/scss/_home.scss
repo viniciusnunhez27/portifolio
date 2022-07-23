@@ -1,0 +1,39 @@
+.s-hero {
+  color:$light-color;
+  margin-top: 197px;
+   .container {
+     .text {
+         h2 {
+            margin-bottom: 12px;
+            font-family:"Inter";
+            font-style:Bold;
+            font-size:24px;
+            line-height:29px;
+            line-height:100%;
+            color:$light-color;
+        }
+         h1 {
+            margin-bottom:12px;
+            font-family:"Inter";
+            font-style:Bold;
+            font-size:64px;
+            line-height:77px;
+            line-height:100%;
+            color: $primary-color;
+        } 
+         button {
+            margin-top:60px;
+            margin-left:24px;
+            &:not(:first-child){
+              margin-left:24px;
+            }
+            @include sytle-btns (45px,$gray-light-color,$light-color)  
+        }     
+        }
+     }
+
+
+   }
+
+
+

@@ -1,0 +1,29 @@
+ header {
+  background-color: $dark-color;
+    .container { 
+       @include flex(row,center,space-between) 
+    }
+     .text {
+        span{
+            font-family:"Inter";
+            font-size: 24px;
+            line-height: 29px;
+            line-height: 100%;
+            color:$primary-color;
+        }
+     }
+    nav {
+      ul {
+        @include flex (row,center,space-between) 
+           
+    }
+      li{
+        margin-right: 66px;
+        font-family: "Inter";
+        font-size: 18px;
+        line-height: 22px;
+        line-height: 100%;
+        color: $light-color;
+      }  
+  } 
+}
