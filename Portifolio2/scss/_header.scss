@@ -1,5 +1,5 @@
  header {
-  margin-top:42px;
+  padding-top:42px;
   background-color: $dark-color;
     .container { 
        @include flex(row,center,space-between) 
@@ -31,7 +31,7 @@
   @include responsive (600px){
      header {
       .container{
-        padding: 15px;
+        padding-left: 15px;
       }  
       .text{
         margin: 0 auto;
