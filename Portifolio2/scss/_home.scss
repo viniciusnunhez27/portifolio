@@ -1,6 +1,7 @@
 .s-hero {
   color:$light-color;
-  margin-top: 197px;
+   padding-top: 12.3125rem;
+   padding-bottom: 12.5rem;
    .container {
      .text {
          h2 {
@@ -22,7 +23,8 @@
             color: $primary-color;
         } 
          button {
-           margin-top:64px;
+           margin-top:4rem;
+           margin-right: 1.5rem;
           @include sytle-btns (45px,153px,$dark-color,$primary-color,$light-color)  
         }     
       }
@@ -40,10 +42,32 @@
         button {
           @include sytle-btns (40px,144px,$dark-color,$primary-color,$light-color);
           margin-top: 2.5rem;
+        
         }
        }
     }
-
-
  }
 }
+
+  .s-about {
+    padding-top: 100px;
+    padding-bottom:98px;    
+    color: white;
+    background-color:$black-section;   
+     .container {
+       @include flex(row,flex-start,space-between);
+        .image { 
+          img {
+           width: 250px;
+           height: 250px;  
+          }
+           .text {
+              h2 {
+               margin-bottom: 10px;
+              }
+       }            
+    }
+  }
+}           
+        
+      
