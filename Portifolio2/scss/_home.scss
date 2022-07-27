@@ -58,16 +58,44 @@
        @include flex(row,flex-start,space-between);
         .image { 
           img {
-           width: 250px;
-           height: 250px;  
+           width: 350px;
+           height: 350px;  
+            }
           }
-           .text {
-              h2 {
-               margin-bottom: 10px;
+            .content-text {
+              h2 { 
+               margin-bottom: 2.5rem;
+               font-size: 2.25rem;
+               font-style: bold;
+               line-height: 100%;
               }
-       }            
-    }
-  }
-}           
+               h4{
+                margin-bottom: 10px;
+                font-size: 1.25rem;
+               }
+                p{
+                width: 100%;
+                max-width:530px;
+                font-size: 1rem;
+                font-style: light;
+                line-height: 32px;
+                color: $gray-light-color;
+                }
+                button{
+                  margin-right: 1.5rem;
+                  margin-top: 120px;
+
+                  @include sytle-btns (45px,153px,$dark-color,$primary-color,$light-color) 
+
+                }
+                  
+            
+                }
+              }
+          } 
+                 
+    
+
+
         
       
