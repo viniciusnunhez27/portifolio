@@ -42,10 +42,10 @@
       }
     }
 
- @include responsive (360px){ 
+ @include responsive (360px){   
   .container {
        padding-left: 1.25rem;
-       
+ 
        .text {
          h1{
           font-size: 2rem;
@@ -61,6 +61,7 @@
             @include sytle-btns (40px,144px,$dark-color,$primary-color,$light-color); 
             margin-right: 8px;
             margin-top: 10px;
+            font-size: 14px;
             }
           }
           }
@@ -106,16 +107,40 @@
                 button{
                   margin-right: 1.5rem;
                   margin-top: 1.5rem;
-                  text-align: center;
                   @include sytle-btns (45px,153px,$dark-color,$primary-color,$light-color)
                   } 
                 }
               }
-              @include responsive (360px) {
-                 
-
-              }
-          } 
+              @include responsive (360px) { 
+                 .container {
+                    .image {
+                       display: none;
+                    }
+                    .content-text {
+                      h2{
+                        font-size: 1.5rem;
+                    }
+                    h4 {
+                      font-size: 1rem;
+                    }
+                    p{
+                      font-size: 0.875rem;
+                    }
+                     .btns {
+                      display: flex;
+                     }
+                      button {
+                       margin-right: 8px;
+                       font-size: 14px;
+                      }
+                     }
+                   }
+                 }     
+               }
+              
+               
+          
+        
 
 
                  
