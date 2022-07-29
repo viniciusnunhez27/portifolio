@@ -1,5 +1,5 @@
 .s-hero {
-  color:$light-color;
+   color:$light-color;
    padding-top: 12.3125rem;
    padding-bottom: 12.5rem;
    .container {
@@ -42,9 +42,10 @@
       }
     }
 
- @include responsive (360px){
-    .container {
+ @include responsive (360px){ 
+  .container {
        padding-left: 1.25rem;
+       
        .text {
          h1{
           font-size: 2rem;
@@ -52,31 +53,34 @@
          h2{
           font-size: 1rem;
          }
+
         .btns {
+          margin-bottom: 30px;
           display: flex;
            button{
             @include sytle-btns (40px,144px,$dark-color,$primary-color,$light-color); 
-              a{
-                text-align: center;
-              }
-           }
+            margin-right: 8px;
+            margin-top: 10px;
+            }
+          }
           }
        }
     }
  }
-}
+
+
 
   .s-about {
-    padding-top: 100px;
-    padding-bottom:98px;    
+    padding-top: 6.25rem;
+    padding-bottom:6.125rem;    
     color: white;
     background-color:$black-section;   
      .container {
        @include flex(row,flex-start,space-between);
         .image { 
           img {
-           width: 350px;
-           height: 350px;  
+           width: 21.875rem;
+           height: 21.875rem;  
             }
           }
             .content-text {
@@ -93,10 +97,10 @@
                }
                 p{
                 width: 100%;
-                max-width:530px;
+                max-width:33.125rem;
                 font-size: 1.25rem;
                 font-style: light;
-                line-height: 32px;
+                line-height: 2rem;
                 color: $gray-light-color;
                 }
                 button{
@@ -106,9 +110,14 @@
                   @include sytle-btns (45px,153px,$dark-color,$primary-color,$light-color)
                   } 
                 }
-               
+              }
+              @include responsive (360px) {
+                 
+
               }
           } 
+
+
                  
             
             
