@@ -151,36 +151,59 @@
                 text-transform: uppercase;
                 font-weight: 600;
                 margin-bottom: 26px;
-              }
+              } 
+               .nav-tabs {           
                li {
                 font-size: 20px;
                 font-weight: 500;
                 cursor: pointer; 
                 display: flex;
                 margin-bottom: 26px;  
-               }
+               } 
+                a {
+                  display: inline-block;
+                  transition: color .3s, background-color .3s;
+                }
+                a.active{
+                background-color: $primary-color;
+                color: $dark-color;
               }
+               a:hover{
+                background-color:$primary-color;
+                color: $dark-color;
+               }
+            }
+          }
+
               .right-carrer{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: flex-start;
-                margin-bottom: 1.75rem;
-              
-              .title-carrer {
-               @include flex (row,center,space-between);
-                width: 100%;
-                margin-bottom: 1.75rem;
+                margin-bottom: 1.75rem;  
+                .title-carrer {
+                  @include flex (row,center,space-between);
+                  width: 100%;
+                  margin-bottom: 1.75rem;
                  h2 {
                   font-size: 1.5rem;
-                  line-height: 1.8125rem;
-
-
+                  line-height: 1.8125rem;                   
                  }
               }
+
+              .tab-content,
+              .tab-pane {
+                display: none;
+              }
+
+              .tab-content,
+              .tab-pane.active{
+                display: block;
+              }
+
               .tag {
                 color: $primary-color; 
-                font-size: 1rem;
+                font-size: 1.2rem;
                 font-weight: 1.5rem;
                 line-height: 124%;
               }
@@ -192,15 +215,11 @@
                 font-weight: 1.75rem;
                 line-height: 129%;
                 color: $gray-light-color;
-
+               }
               }
-
             }
-         
-
-            }
-         }
-      }
+          }
+       }
    
    
     
