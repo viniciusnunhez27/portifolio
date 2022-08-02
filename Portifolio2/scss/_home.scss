@@ -176,11 +176,8 @@
           }
 
               .right-carrer{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: flex-start;
                 margin-bottom: 1.75rem;  
+                @include flex (column,center,flex-end);
                 .title-carrer {
                   @include flex (row,center,space-between);
                   width: 100%;
@@ -199,6 +196,7 @@
               .tab-content,
               .tab-pane.active{
                 display: block;
+            
               }
 
               .tag {
