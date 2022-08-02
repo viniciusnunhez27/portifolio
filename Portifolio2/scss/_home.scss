@@ -1,238 +1,294 @@
 .s-hero {
-   color:$light-color;
-   padding-top: 12.3125rem;
-   padding-bottom: 12.5rem;
-   .container {
-     .text {
-         h2 {
-            margin-bottom: 12px;
-            font-family:"Inter";
-            font-style:Bold;
-            font-size:24px;
-            line-height:29px;
-            line-height:100%;
-            color:$light-color;
-        }
-         h1 {
-            margin-bottom:12px;
-            font-family:"Inter";
-            font-style:Bold;
-            font-size:64px;
-            line-height:77px;
-            line-height:100%;
-            color: $primary-color;
-        } 
-         button {
-           margin-top:4rem;
-           margin-right: 1.5rem;
-           text-align: center;
-          @include sytle-btns (45px,153px,$dark-color,$primary-color,$light-color)  
-        }     
-      }
-    }
-    @include responsive (460px){
-      .btns {
-        display: flex;
-         button{
-          @include sytle-btns (40px,144px,$dark-color,$primary-color,$light-color); 
-            a{
-              text-align: center;
-            }
-          }
-      }
-    }
+  color: $light-color;
+  padding-top: 12.3125rem;
+  padding-bottom: 12.5rem;
 
- @include responsive (360px){   
   .container {
-       padding-left: 1.25rem;
- 
-       .text {
-         h1{
+    .text {
+      h2 {
+        margin-bottom: 12px;
+        font-family: "Inter";
+        font-style: Bold;
+        font-size: 24px;
+        line-height: 29px;
+        line-height: 100%;
+        color: $light-color;
+      }
+
+      h1 {
+        margin-bottom: 12px;
+        font-family: "Inter";
+        font-style: Bold;
+        font-size: 64px;
+        line-height: 77px;
+        line-height: 100%;
+        color: $primary-color;
+      }
+
+      button {
+        margin-top: 4rem;
+        margin-right: 1.5rem;
+        text-align: center;
+        @include sytle-btns (45px, 153px, $dark-color, $primary-color, $light-color)
+      }
+    }
+  }
+
+  @include responsive (460px) {
+    .btns {
+      display: flex;
+
+      button {
+        @include sytle-btns (40px, 144px, $dark-color, $primary-color, $light-color);
+
+        a {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @include responsive (360px) {
+    .container {
+      padding-left: 1.25rem;
+
+      .text {
+        h1 {
           font-size: 2rem;
-         }
-         h2{
+        }
+
+        h2 {
           font-size: 1rem;
-         }
+        }
 
         .btns {
           margin-bottom: 30px;
           display: flex;
-           button{
-            @include sytle-btns (40px,144px,$dark-color,$primary-color,$light-color); 
+
+          button {
+            @include sytle-btns (40px, 144px, $dark-color, $primary-color, $light-color);
             margin-right: 8px;
             margin-top: 10px;
             font-size: 14px;
-           }
           }
-          }
-       }
+        }
+      }
     }
- }
+  }
+}
 
 
 
-  .s-about {
-    padding-top: 6.25rem;
-    padding-bottom:6.125rem;    
-    color: white;
-    background-color:$black-section;   
-     .container {
-       @include flex(row,flex-start,space-between);
-        .image { 
-          img {
-           width: 21.875rem;
-           height: 21.875rem;  
+.s-about {
+  padding-top: 6.25rem;
+  padding-bottom: 6.125rem;
+  color: white;
+  background-color: $black-section;
+
+  .container {
+    @include flex(row, flex-start, space-between);
+
+    .image {
+      img {
+        width: 21.875rem;
+        height: 21.875rem;
+      }
+    }
+
+    .content-text {
+      h2 {
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+        font-size: 2.25rem;
+        font-style: bold;
+        line-height: 100%;
+      }
+
+      h4 {
+        margin-bottom: 0.625rem;
+        font-size: 1.50rem;
+      }
+
+      p {
+        width: 100%;
+        max-width: 33.125rem;
+        font-size: 1.25rem;
+        font-style: light;
+        line-height: 2rem;
+        color: $gray-light-color;
+      }
+
+      button {
+        margin-right: 1.5rem;
+        margin-top: 1.5rem;
+        @include sytle-btns (45px, 153px, $dark-color, $primary-color, $light-color)
+      }
+    }
+  }
+
+  @include responsive (360px) {
+    .container {
+      .image {
+        display: none;
+      }
+
+      .content-text {
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        h4 {
+          font-size: 1rem;
+        }
+
+        p {
+          font-size: 0.875rem;
+        }
+
+        .btns {
+          display: flex;
+        }
+
+        button {
+          margin-right: 8px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+
+.s-experiencie {
+  padding-top: 100px;
+  padding-bottom: 118px;
+  color: white;
+
+  .container {
+    .content-carrer {
+      @include flex (row, flex-start, space-between);
+
+      .left-carrer {
+        h2 {
+          text-transform: uppercase;
+          font-weight: 600;
+          margin-bottom: 26px;
+        }
+
+        .nav-tabs {
+          li {
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            margin-bottom: 26px;
+          }
+
+          a {
+            display: inline-block;
+            transition: color .3s, background-color .3s;
+          }
+
+          a.active {
+            background-color: $primary-color;
+            color: $dark-color;
+          }
+
+          a:hover {
+            background-color: $primary-color;
+            color: $dark-color;
+          }
+        }
+      }
+
+      .right-carrer {
+        margin-bottom: 1.75rem;
+        @include flex (column, center, flex-end);
+
+        .title-carrer {
+          @include flex (row, center, space-between);
+          width: 100%;
+          margin-bottom: 1.75rem;
+
+          h2 {
+            font-size: 1.5rem;
+            line-height: 1.8125rem;
+          }
+        }
+
+        .tab-content,
+        .tab-pane {
+          display: none;
+        }
+
+        .tab-content,
+        .tab-pane.active {
+          display: block;
+
+        }
+
+        .tag {
+          color: $primary-color;
+          font-size: 1.2rem;
+          font-weight: 1.5rem;
+          line-height: 124%;
+        }
+
+        p {
+          margin-top: 1.625rem;
+          width: 100%;
+          max-width: 39.75rem;
+          font-size: 1.125rem;
+          font-weight: 1.75rem;
+          line-height: 129%;
+          color: $gray-light-color;
+        }
+      }
+    }
+
+    @include responsive(360px) {
+      .content-carrer {
+        display: flex;
+        flex-direction: column;
+
+        .left-carrer {
+          h2 {
+            font-size: 20px;
+          }
+        }
+
+        .nav-tabs {
+          display: flex;
+          align-items: center;
+
+          li {
+            a {
+              font-size: 14px;
+              text-align: center;
             }
           }
-            .content-text {
-              h2 { 
-               text-transform: uppercase;
-               margin-bottom: 2.5rem;
-               font-size: 2.25rem;
-               font-style: bold;
-               line-height: 100%;
-              }
-               h4{
-                margin-bottom: 0.625rem;
-                font-size: 1.50rem;
-               }
-                p{
-                width: 100%;
-                max-width:33.125rem;
-                font-size: 1.25rem;
-                font-style: light;
-                line-height: 2rem;
-                color: $gray-light-color;
-                }
-                button{
-                  margin-right: 1.5rem;
-                  margin-top: 1.5rem;
-                  @include sytle-btns (45px,153px,$dark-color,$primary-color,$light-color)
-                  } 
-                }
-              }
-              @include responsive (360px) { 
-                 .container {
-                    .image {
-                       display: none;
-                    }
-                    .content-text {
-                      h2{
-                        font-size: 1.5rem;
-                    }
-                    h4 {
-                      font-size: 1rem;
-                    }
-                    p{
-                      font-size: 0.875rem;
-                    }
-                     .btns {
-                      display: flex;
-                     }
-                      button {
-                       margin-right: 8px;
-                       font-size: 14px;
-                      }
-                     }
-                   }
-                 }     
-               }
+        }
 
+        .right-carrer {
+          .title-carrer {
+            h2 {
+              font-size: 16px;
+            }
 
-   .s-experiencie { 
-    padding-top: 100px;
-    padding-bottom:118px;
-    color: white;
-      .container{ 
-         .content-carrer {
-          @include flex (row,flex-start,space-between);
-            .left-carrer {
-              h2 {
-                text-transform: uppercase;
-                font-weight: 600;
-                margin-bottom: 26px;
-              } 
-               .nav-tabs {           
-               li {
-                font-size: 20px;
-                font-weight: 500;
-                cursor: pointer; 
-                display: flex;
-                margin-bottom: 26px;  
-               } 
-                a {
-                  display: inline-block;
-                  transition: color .3s, background-color .3s;
-                }
-                a.active{
-                background-color: $primary-color;
-                color: $dark-color;
-              }
-               a:hover{
-                background-color:$primary-color;
-                color: $dark-color;
-               }
+            span {
+              font-size: 12px;
             }
           }
 
-              .right-carrer{
-                margin-bottom: 1.75rem;  
-                @include flex (column,center,flex-end);
-                .title-carrer {
-                  @include flex (row,center,space-between);
-                  width: 100%;
-                  margin-bottom: 1.75rem;
-                 h2 {
-                  font-size: 1.5rem;
-                  line-height: 1.8125rem;                   
-                 }
-              }
-
-              .tab-content,
-              .tab-pane {
-                display: none;
-              }
-
-              .tab-content,
-              .tab-pane.active{
-                display: block;
-            
-              }
-
-              .tag {
-                color: $primary-color; 
-                font-size: 1.2rem;
-                font-weight: 1.5rem;
-                line-height: 124%;
-              }
-              p{
-                margin-top: 1.625rem;
-                width: 100%;
-                max-width: 39.75rem;
-                font-size: 1.125rem;
-                font-weight: 1.75rem;
-                line-height: 129%;
-                color: $gray-light-color;
-               }
-              }
-            }
+          .tag {
+            font-size: 14px;
           }
-       }
-   
-   
-    
 
-              
-               
-          
-        
-
-
-                 
-            
-            
-    
-
-
-        
-      
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
