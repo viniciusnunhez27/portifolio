@@ -1,0 +1,1 @@
+const navTabs=document.querySelectorAll(".js-nav-tabs li a"),tabPane=document.querySelectorAll(".js-tab-pane");navTabs.forEach((a,b)=>{a.addEventListener("click",c=>{c.preventDefault(),a.classList.add("active"),navTabs.forEach(a=>{a.classList.remove("active")}),tabPane.forEach(a=>{a.classList.remove("active")}),a.classList.add("active"),tabPane[b].classList.add("active")})});

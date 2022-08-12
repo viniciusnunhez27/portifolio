@@ -157,7 +157,7 @@
     }
   }
 
-  @include responsive(360px) {
+  @include responsive(375px) {
     padding-top:2.5rem;
     padding-bottom: 2.5rem; 
     .container {
@@ -277,7 +277,7 @@
       }
     }
 
-    @include responsive(360px) {
+    @include responsive(375px) {
       padding-top:2.5rem;
       padding-bottom: 2.5rem; 
       .content-carrer {
@@ -385,7 +385,7 @@
         }
     } 
    }
-   @include responsive(360px){
+   @include responsive(375px){
     padding-top:2.5rem;
      .container{
        .card{
