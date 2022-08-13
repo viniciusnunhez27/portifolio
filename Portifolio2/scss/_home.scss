@@ -24,38 +24,37 @@
         line-height: 100%;
         color: $primary-color;
       }
+
       button {
         margin-top: 4rem;
         margin-right: 1.5rem;
         text-align: center;
         transition: all .3ms;
-        @include sytle-btns(
-          2.8125rem,
+        @include sytle-btns(2.8125rem,
           9.5625rem,
           $dark-color,
           $primary-color,
           $light-color,
         );
+
         &:hover {
-          background-color:$primary-color;
-          }
-         }
+          background-color: $primary-color;
+        }
       }
     }
-  
+  }
+
 
   @include responsive(460px) {
     .btns {
       display: flex;
 
       button {
-        @include sytle-btns(
-          2.5rem,
+        @include sytle-btns(2.5rem,
           9rem,
           $dark-color,
           $primary-color,
-          $light-color
-        );
+          $light-color );
 
         a {
           text-align: center;
@@ -65,8 +64,9 @@
   }
 
   @include responsive(360px) {
-      padding-top:2.5rem;
-      padding-bottom: 2.5rem; 
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+
     .container {
       padding-left: 1.25rem;
 
@@ -84,13 +84,11 @@
           display: flex;
 
           button {
-            @include sytle-btns(
-              2.5rem,
+            @include sytle-btns(2.5rem,
               9rem,
               $dark-color,
               $primary-color,
-              $light-color
-            );
+              $light-color );
             margin-right: 0.5rem;
             margin-top: 0.625rem;
             font-size: 0.875rem;
@@ -144,22 +142,23 @@
         margin-right: 1.5rem;
         margin-top: 1.5rem;
         transition: all .3ms;
-        @include sytle-btns(
-          2.8125rem,
+        @include sytle-btns(2.8125rem,
           9.5625rem,
           $dark-color,
           $primary-color,
-          $light-color
-        );&:hover {
-          background-color:$primary-color;
-          }
+          $light-color );
+
+        &:hover {
+          background-color: $primary-color;
+        }
       }
     }
   }
 
   @include responsive(375px) {
-    padding-top:2.5rem;
-    padding-bottom: 2.5rem; 
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+
     .container {
       .image {
         display: none;
@@ -278,8 +277,9 @@
     }
 
     @include responsive(375px) {
-      padding-top:2.5rem;
-      padding-bottom: 2.5rem; 
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+
       .content-carrer {
         display: flex;
         flex-direction: column;
@@ -327,9 +327,11 @@
 }
 
 .s-projects {
+  background-color: $black-section;
   padding-top: 6.25rem;
   padding-bottom: 6.25rem;
-    .container {
+
+  .container {
     h2 {
       font-size: 1.5rem;
       margin-bottom: 60px;
@@ -366,37 +368,60 @@
     }
 
     span {
-      display: block;
-      color: $primary-color;
+      a {
+        display: block;
+        color: $primary-color;
+      }
     }
 
     button {
       margin-bottom: 1.875rem;
       margin-top: 2rem;
       transition: all .3ms;
-      @include sytle-btns(
-        45px,
+      @include sytle-btns(45px,
         153px,
         $dark-color,
         $primary-color,
-        $light-color
-      );&:hover {
-        background-color:$primary-color;
+        $light-color );
+
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+  }
+
+  @include responsive(375px) {
+    padding-top: 2.5rem;
+
+    .container {
+      .card {
+        text-align: center;
+
+        img {
+          width: 100%;
         }
-    } 
-   }
-   @include responsive(375px){
-    padding-top:2.5rem;
-     .container{
-       .card{
-         text-align: center;
-          img{
-            width: 100%;
-          }
-       }
-     }
+      }
+    }
 
   }
-   
+
+
+
 }
 
+footer { 
+   .container{
+    @include  flex(row,flex-end,space-between);
+    padding-top:40px; 
+    padding-bottom:40px; 
+   }
+
+   p {
+    color:$light-color;
+   }
+   .right{
+     .icon{
+       color:$primary-color;
+     }
+    }
+   }

@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.min.css">
     <title>Meu Portifolio</title>
 </head>
 <body>
    <header>
-      <div class="container">
-         <div class="text">
+      <div class="container" data-aos="fade-down" data-aos-duration="1000"   >
+         <div class="text ">
             <span>Portifólio</span>
          </div>
          <nav>
@@ -27,7 +28,7 @@
       </div>
    </header>
    <section class="s-hero">
-    <div class="container">
+    <div class="container" data-aos="fade-right" data-aos-duration="2500">
      <div class="text">
         <h2>OLÁ, EU SOU</h2>
         <h1>VINÍCIUS NUNES</h1>
@@ -39,7 +40,7 @@
       </div>
     </div>
    </section>
-   <section class="s-about" id="#sobremim">
+   <section class="s-about" id="#sobremim" data-aos="zoom-out" data-aos-duration="2000">
       <div class="container">
          <div class="image">
             <img src="/assets/Profile-Linkedin.jpeg" alt="Imagem Linkedin">
@@ -56,7 +57,7 @@
          </div>
       </div>
    </section>
-   <section  class="s-experiencie" id="#experiencia">
+   <section  class="s-experiencie" id="#experiencia" data-aos="fade-down" data-aos-offset="300"  data-aos-easing="ease-in-sine">
        <div class="container">
       <div class="content-carrer">
         <div class="left-carrer">
@@ -111,48 +112,64 @@
   </div>
 </div>
  </section>
- <section class="s-projects" id="#projetos">
+ <section class="s-projects" id="#projetos" >
    <div class="container"> 
-      <h2>Projetos</h2>
+      <h2 data-aos="fade-down" data-aos-offset="500" data-aos-duration="1000" data-aos-easing="ease-in-sine">Projetos</h2>
       <div class="cards">
-          <div class="card">
+          <div class="card" data-aos="fade-right"  data-aos-duration="1000" data-aos-offset="500"  data-aos-easing="ease-in-sine">
          <img src="./assets/Rectangle 16.svg" alt="imagem-projeto">
       <h4>Nome do Projeto</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</p>
-      <span>Tecnologias usadas no projeto</span>
-       <button class="btn">Visualizar</button>
+      <span>  <a href="">Tecnologias usadas no projeto</a></span>
+      <button class="btn"> <a href="https://portifolio-flex-blog.netlify.app">Visualizar</a></button>
        </div>
        
-       <div class="card">
+       <div class="card" data-aos="fade-left"  data-aos-duration="1000" data-aos-offset="500"  data-aos-easing="ease-in-sine">
           <img src="./assets/Rectangle 16.svg" alt="imagem-projeto">
        <h4>Nome do Projeto</h4>
        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</p>
-       <span>Tecnologias usadas no projeto</span>
-        <button class="btn">Visualizar</button>
-        
+       <span>  <a href="">Tecnologias usadas no projeto</a></span>
+       <button class="btn"> <a href="https://portifolio-flex-blog.netlify.app">Visualizar</a></button>
+      
       </div>
         
-        <div class="card">
+        <div class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="500"  data-aos-easing="ease-in-sine"> 
            <img src="./assets/Rectangle 16.svg" alt="imagem-projeto"> 
         <h4>Nome do Projeto</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</p>
-        <span>Tecnologias usadas no projeto</span>
-         <button class="btn">Visualizar</button>
+        <span>  <a href="">Tecnologias usadas no projeto</a></span>
+        <button class="btn"> <a href="https://portifolio-flex-blog.netlify.app">Visualizar</a></button>
       </div>
 
-         <div class="card">
+         <div class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="500"  data-aos-easing="ease-in-sine">
             <img src="./assets/Rectangle 16.svg" alt="imagem-projeto">
          <h4>Nome do Projeto</h4>
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</p>
-         <span>Tecnologias usadas no projeto</span>
-          <button class="btn">Visualizar</button>
+         <span> <a href="">Tecnologias usadas no projeto</a></span>
+          <button class="btn"> <a href="https://portifolio-flex-blog.netlify.app">Visualizar</a></button>
+       
     </div>
       </div>
      </div>
     </div>
    </div>  
  </section>
-<script src="/Portifolio2/script.js"></script>
+ <footer>
+   <div class="container">
+    <div class="left">
+   <p>@2022 - Desenvolvido por Vinicius Nunes</p>   
+</div>
+   <div class="right">
+    <span>Powered by <span class="icon">{ }</span></span>
+   </div>
+   </div>
+ </footer>
+
+<script src="./script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+   AOS.init();
+ </script>
   
 </body>
 </html>
