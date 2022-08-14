@@ -138,20 +138,6 @@
         color: $gray-light-color;
       }
 
-      button {
-        margin-right: 1.5rem;
-        margin-top: 1.5rem;
-        transition: all .3ms;
-        @include sytle-btns(2.8125rem,
-          9.5625rem,
-          $dark-color,
-          $primary-color,
-          $light-color );
-
-        &:hover {
-          background-color: $primary-color;
-        }
-      }
     }
   }
 
@@ -345,6 +331,7 @@
       flex-wrap: wrap;
 
       img {
+        color: white;
         max-width: 33.125rem;
         height: 9.375rem;
       }
@@ -358,6 +345,7 @@
     }
 
     p {
+     
       margin-top: 1.875rem;
       margin-bottom: 1.625rem;
       font-size: 1rem;
