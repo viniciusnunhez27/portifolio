@@ -1,5 +1,5 @@
  header {
-  padding-top:42px;
+  padding-top:2.625rem;
   background-color: $dark-color;
     .container { 
        @include flex(row,center,space-between) 
@@ -7,8 +7,8 @@
      .text {
         span{
             font-family:"Inter";
-            font-size: 24px;
-            line-height: 29px;
+            font-size: 1.5rem;
+            line-height: 1.8125rem;
             line-height: 100%;
             color:$primary-color;
         }
@@ -19,10 +19,10 @@
            
     }
       li{
-        margin-right: 66px;
+        margin-right: 4.125rem;
         font-family: "Inter";
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 1.125rem;
+        line-height: 1.375rem;
         line-height: 100%;
         color: $light-color;
       }  
@@ -31,7 +31,7 @@
   @include responsive (600px){
      header {
       .container{
-        padding-left: 15px;
+        padding-left: 0.9375rem;
       }  
       .text{
         margin: 0 auto;
@@ -39,7 +39,7 @@
      } 
      nav{
       display: none;
-    } 
+    }
   }
 
  }

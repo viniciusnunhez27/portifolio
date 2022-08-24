@@ -43,26 +43,8 @@
       }
     }
   }
-
-
-  @include responsive(460px) {
-    .btns {
-      display: flex;
-
-      button {
-        @include sytle-btns(2.5rem,
-          9rem,
-          $dark-color,
-          $primary-color,
-          $light-color );
-
-        a {
-          text-align: center;
-        }
-      }
-    }
-  }
-
+    
+  
   @include responsive(360px) {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -141,7 +123,7 @@
     }
   }
 
-  @include responsive(375px) {
+  @include responsive(360px) {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 
@@ -262,7 +244,7 @@
       }
     }
 
-    @include responsive(375px) {
+    @include responsive(360px) {
       padding-top: 2.5rem;
       padding-bottom: 2.5rem;
 
@@ -358,19 +340,23 @@
     span {
       a {
         display: block;
-        color: $primary-color;
-      }
+        color: $primary-color; 
+    }
+   
+      
     }
 
     button {
-      margin-bottom: 1.875rem;
-      margin-top: 2rem;
+      margin-top: 4rem;
+      margin-right: 1.5rem;
+      text-align: center;
       transition: all .3ms;
-      @include sytle-btns(45px,
-        153px,
+      @include sytle-btns(3.4375rem,
+        10rem,
         $dark-color,
         $primary-color,
-        $light-color );
+        $light-color,
+      );
 
       &:hover {
         background-color: $primary-color;
@@ -378,7 +364,7 @@
     }
   }
 
-  @include responsive(375px) {
+  @include responsive(360px) {
     padding-top: 2.5rem;
 
     .container {
