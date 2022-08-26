@@ -8,10 +8,13 @@
 
 body { 
   background-color: $dark-color;
+  overflow-y: scroll
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-y: scroll
+
 }
 
 
