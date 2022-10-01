@@ -122,12 +122,42 @@
 
     }
   }
+
   @include responsive(420px) {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+
     .container {
       .image {
         display: none;
       }
+
+      .content-text {
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        h4 {
+          font-size: 1rem;
+        }
+
+        p {
+          font-size: 0.875rem;
+        }
+
+        .btns {
+          display: flex;
+        }
+
+        button {
+          margin-right: 0.5rem;
+          font-size: 0.875rem;
+        }
+      }
+    }
   }
+}
+
 
   @include responsive(380px) {
     padding-top: 2.5rem;
@@ -162,8 +192,8 @@
       }
     }
   }
-}
-}
+
+
 
 .s-experiencie {
   padding-top: 6.25rem;
@@ -290,7 +320,7 @@
           }
 
           .tag {
-            font-size: 0.875rem;
+            font-size: 1.25rem;
           }
 
           p {
