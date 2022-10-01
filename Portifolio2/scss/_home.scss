@@ -160,8 +160,8 @@
 
 
   @include responsive(380px) {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    
+    
 
     .container {
       .image {
@@ -349,11 +349,13 @@
       align-items: flex-start;
       justify-content: space-between;
       flex-wrap: wrap;
-
+     
       img {
+        display: inline-block;
+        max-width: 397px;
         color: white;
-        max-width: 33.125rem;
-        height: 9.375rem;
+        height: 150px;
+        margin-top: 1rem;
       }
     }
 
@@ -365,7 +367,7 @@
     }
 
     p {
-     
+      max-width: 397px;
       margin-top: 1.875rem;
       margin-bottom: 1.625rem;
       font-size: 1rem;
@@ -386,6 +388,7 @@
 
     button {
       margin-top: 4rem;
+      margin-bottom: 2rem;
       margin-right: 1.5rem;
       text-align: center;
       transition: all .3ms;
