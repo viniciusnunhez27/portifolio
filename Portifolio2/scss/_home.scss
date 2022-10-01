@@ -122,6 +122,12 @@
 
     }
   }
+  @include responsive(380px) {
+    .container {
+      .image {
+        display: none;
+      }
+  }
 
   @include responsive(380px) {
     padding-top: 2.5rem;
@@ -156,6 +162,7 @@
       }
     }
   }
+}
 }
 
 .s-experiencie {
@@ -244,7 +251,7 @@
       }
     }
 
-    @include responsive(380px) {
+    @include responsive(420px) {
       padding-top: 2.5rem;
       padding-bottom: 2.5rem;
 
